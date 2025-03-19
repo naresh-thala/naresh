@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f1f9;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+            border-bottom: 3px solid #00bcd4;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            font-weight: lighter;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            color: #2d3e50;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #2d3e50;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Naresh P</h1>
+            <p>Software Developer | Problem Solver | Innovator</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm <strong>Naresh P</strong>, a passionate <strong>Software Developer</strong> focused on crafting scalable and efficient software solutions. With a keen eye for design and functionality, I aim to create software that solves real-world problems. Whether it's building applications or diving into new technologies, I enjoy being part of the tech ecosystem that drives change and innovation.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p><strong>Madras University</strong> - Bachelor of Computer Applications (BCA)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Cybersecurity</li>
+                <li>Internet of Things (IoT)</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">AI Blind Assistance System</a></li>
+                <li><a href="#">Rainfall Prediction System</a></li>
+                <li><a href="#">IBM Chatbot</a></li>
+                <li><a href="#">Custom Chatbot</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Naresh P | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
